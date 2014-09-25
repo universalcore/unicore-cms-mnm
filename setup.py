@@ -6,7 +6,7 @@ requires = [
 ]
 
 setup(name='unicore-cms-ffl',
-      version='0.1',
+      version='0.2',
       description='JSON based CMS for Universal Core',
       long_description='JSON based CMS for Universal Core',
       classifiers=[
