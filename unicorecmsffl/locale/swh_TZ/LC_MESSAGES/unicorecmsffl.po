@@ -1,0 +1,35 @@
+#
+# Language swh translations for PACKAGE package
+# This file is distributed under the same license as the PACKAGE package.
+# TonyM <tonym@localhost>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE 1.0\n"
+"POT-Creation-Date: 2014-09-26 09:27+0200\n"
+"PO-Revision-Date: 2014-09-25 17:57+0200\n"
+"Last-Translator: TonyM <tonym@localhost>\n"
+"Language-Team: Language swh\n"
+"Language: swh_TZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Default: Home
+#: unicorecmsffl/templates/base.pt:31 unicorecmsffl/templates/base.pt:60
+msgid "home"
+msgstr "zebra"
+
+#. Default: About
+#: unicorecmsffl/templates/base.pt:34 unicorecmsffl/templates/base.pt:63
+msgid "about"
+msgstr "impala"
+
+#. Default: Credits
+#: unicorecmsffl/templates/base.pt:37 unicorecmsffl/templates/base.pt:66
+msgid "credits"
+msgstr "springbok"
+
+#. Default: Contact
+#: unicorecmsffl/templates/base.pt:40 unicorecmsffl/templates/base.pt:69
+msgid "contact"
+msgstr "deer"
