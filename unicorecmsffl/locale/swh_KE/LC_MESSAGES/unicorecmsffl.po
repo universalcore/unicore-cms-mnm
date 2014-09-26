@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2014-09-26 09:27+0200\n"
+"POT-Creation-Date: 2014-09-26 14:32+0200\n"
 "PO-Revision-Date: 2014-09-25 17:57+0200\n"
 "Last-Translator: TonyM <tonym@localhost>\n"
 "Language-Team: Language swh\n"
@@ -15,21 +15,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Default: Home
-#: unicorecmsffl/templates/base.pt:31 unicorecmsffl/templates/base.pt:60
+#: unicorecmsffl/templates/base.pt:42 unicorecmsffl/templates/base.pt:71
 msgid "home"
-msgstr "poodle"
+msgstr "Poodle"
 
 #. Default: About
-#: unicorecmsffl/templates/base.pt:34 unicorecmsffl/templates/base.pt:63
+#: unicorecmsffl/templates/base.pt:45 unicorecmsffl/templates/base.pt:74
 msgid "about"
-msgstr "bulldog"
+msgstr "Bulldog"
 
 #. Default: Credits
-#: unicorecmsffl/templates/base.pt:37 unicorecmsffl/templates/base.pt:66
+#: unicorecmsffl/templates/base.pt:48 unicorecmsffl/templates/base.pt:77
 msgid "credits"
-msgstr "beagle"
+msgstr "Beagle"
 
 #. Default: Contact
-#: unicorecmsffl/templates/base.pt:40 unicorecmsffl/templates/base.pt:69
+#: unicorecmsffl/templates/base.pt:51 unicorecmsffl/templates/base.pt:80
 msgid "contact"
-msgstr "spaniel"
+msgstr "Spaniel"
