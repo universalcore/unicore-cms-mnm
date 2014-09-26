@@ -30,4 +30,8 @@ setup(name='unicore-cms-ffl',
       [paste.app_factory]
       main = unicorecmsffl:main
       """,
+      message_extractors={'.': [
+      ('**.py', 'python', None),
+      ('**.pt', 'chameleon', None),
+      ]},
       )
