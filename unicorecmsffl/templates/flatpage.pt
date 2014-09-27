@@ -6,11 +6,6 @@
                 ${page.title}
                 <div class="clear"></div>
             </div>
-            <div class="object-header">
-                <div class="intro">${page.title}</div>
-                <div class="meta"></div>
-            </div>
-
 
             <div class="object-detail-inclusion diarrhoeapost-detail-inclusion">
                 <div class="detail">
