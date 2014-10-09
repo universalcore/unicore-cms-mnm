@@ -3,8 +3,7 @@
 
         <div class="page section_news object-detail ${page.primary_category.slug}-detail">
             <div class="h1">
-                <img src="/static/img/icon-${page.primary_category.slug}.jpg"/>
-                <a href="/content/list/${page.primary_category.uuid}/">${page.primary_category.title}</a>
+                <a href="/content/list/${page.primary_category.uuid}/">&nbsp;${page.primary_category.title}</a>
                 <div class="clear"></div>
             </div>
             <div class="object-header">

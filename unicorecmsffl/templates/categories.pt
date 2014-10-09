@@ -1,8 +1,7 @@
 <div metal:use-macro="view.global_template">
     <div metal:fill-slot="content">
       <div class="h1" tal:repeat="cat view.get_categories()">
-            <a href="/content/list/${cat.uuid}/"><img src="/static/img/icon-${cat.slug}.jpg">
-              ${cat.title}
+            <a href="/content/list/${cat.uuid}/">&nbsp;${cat.title}
             </a>
             <div class="clear"></div>
         </div>

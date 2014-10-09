@@ -19,9 +19,7 @@
 
         <div class="object-category-list modelbase-category-list" tal:repeat="cat view.get_categories()">
         <div class="h1">
-            <a href="/content/list/${cat.uuid}/"><img src="/static/img/icon-${cat.slug}.jpg">
-              ${cat.title}
-            </a>
+            <a href="/content/list/${cat.uuid}/">&nbsp;${cat.title}</a>
             <div class="clear"></div>
         </div>
         <div class="items" tal:condition="view.get_featured_category_pages(cat.uuid)">
