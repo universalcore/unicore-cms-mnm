@@ -7,7 +7,7 @@
                 <div class="clear"></div>
             </div>
             <div class="object-header">
-                <div class="intro">${page.title}</div>
+                <div class="intro">${page.description}</div>
                 <div class="meta"></div>
             </div>
 
