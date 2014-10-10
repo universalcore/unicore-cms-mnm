@@ -1,0 +1,33 @@
+<div metal:use-macro="view.global_template"
+     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     i18n:domain="unicorecmsffl">
+
+    <div metal:fill-slot="content">
+
+        <div class="page section_news object-detail">
+            <div class="h2" i18n:translate="Credits">Credits</div>
+            <div class="intro" i18n:translate="Thanks to our partners">Thanks to our partners</div>
+
+            <div class="detail">
+                <p class="text-center">
+                    <a href="http://unicef.org/" target="_blank"><img src="/static/img/logo-unicef.png"></a> &nbsp;
+                    <a href="http://www.who.int/" target="_blank"><img src="/static/img/logo-who.png"></a>
+                </p>
+                <p class="text-center">
+                    <a href="http://www.unesco.org/" target="_blank"><img src="/static/img/logo-unesco.png"></a> &nbsp;
+                    <a href="http://www.worldbank.org/" target="_blank"><img src="/static/img/logo-world-bank.png"></a>
+                </p>
+                <p class="text-center">
+                    <a href="http://www.undp.org/" target="_blank"><img src="/static/img/logo-undp.png"></a> &nbsp;
+                    <a href="http://www.wfp.org/" target="_blank"><img src="/static/img/logo-wfp.png"></a>
+                </p>
+                <p class="text-center">
+                    <a href="http://www.unfpa.org/" target="_blank"><img src="/static/img/logo-unfpa.png"></a> &nbsp;
+                    <a href="http://www.unaids.org/" target="_blank"><img src="/static/img/logo-unaids.png"></a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
