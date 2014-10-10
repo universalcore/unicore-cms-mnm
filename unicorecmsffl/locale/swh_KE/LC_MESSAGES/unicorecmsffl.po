@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2014-09-29 23:09+0200\n"
+"POT-Creation-Date: 2014-10-10 08:52+0200\n"
 "PO-Revision-Date: 2014-09-25 17:57+0200\n"
 "Last-Translator: TonyM <tonym@localhost>\n"
 "Language-Team: Language swh\n"
@@ -16,30 +16,40 @@ msgstr ""
 
 #. Default: Latest
 #: unicorecmsffl/templates/home.pt:11
-msgid "latest"
+#, fuzzy
+msgid "Latest"
 msgstr "Chihuahua"
 
 #. Default: More
-#: unicorecmsffl/templates/home.pt:66
-msgid "more"
+#: unicorecmsffl/templates/home.pt:64
+msgid "More"
 msgstr "Dane"
 
 #. Default: Home
 #: unicorecmsffl/templates/base.pt:42 unicorecmsffl/templates/base.pt:71
-msgid "home"
+msgid "Home"
 msgstr "Poodle"
 
 #. Default: About
 #: unicorecmsffl/templates/base.pt:45 unicorecmsffl/templates/base.pt:74
-msgid "about"
+#, fuzzy
+msgid "About"
 msgstr "Bulldog"
 
 #. Default: Credits
 #: unicorecmsffl/templates/base.pt:48 unicorecmsffl/templates/base.pt:77
-msgid "credits"
+#, fuzzy
+msgid "Credits"
 msgstr "Beagle"
 
 #. Default: Contact
 #: unicorecmsffl/templates/base.pt:51 unicorecmsffl/templates/base.pt:80
-msgid "contact"
+#, fuzzy
+msgid "Contact"
 msgstr "Spaniel"
+
+#~ msgid "more"
+#~ msgstr "Dane"
+
+#~ msgid "home"
+#~ msgstr "Poodle"
