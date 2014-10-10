@@ -18,8 +18,9 @@
 <body>
 <div id="wrap">
     <div id="nav">
-      <span tal:repeat="(code, title) view.get_available_languages">
-        <a href="/locale/?language=${code}">${title}</a> |
+      <span tal:repeat="item view.get_available_languages">
+        <a href="/locale/?language=${item[0]}">${item[1]}</a>
+        <span tal:omit-tag="" tal:condition="not repeat.item.end"> |</span>
       </span>
     </div>
     <div id="header">
