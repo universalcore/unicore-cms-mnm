@@ -2,7 +2,7 @@
     <div metal:fill-slot="content">
 
         <div class="page section_news object-detail">
-            <div class="h1">
+            <div class="h2">
                 ${page.title}
                 <div class="clear"></div>
             </div>
