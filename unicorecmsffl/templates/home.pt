@@ -5,7 +5,7 @@
         <div id="banner"><img src="/static/img/kids.jpg"></div>
 
         <div class="object-category-list modelbase-category-list" tal:condition="view.get_featured_pages()">
-        <div class="h1">&nbsp;<span i18n:translate="Latest">Latest</span><div class="clear"></div></div>
+        <div class="h2"><span i18n:translate="Latest">Latest</span><div class="clear"></div></div>
         <div class="items">
         <div class="box">
             <div class="item" tal:repeat="page view.get_featured_pages()">
@@ -19,7 +19,7 @@
 
         <div class="object-category-list modelbase-category-list" tal:repeat="cat view.get_categories()">
         <div class="h1">
-            <a href="/content/list/${cat.uuid}/">&nbsp;${cat.title}</a>
+            <a href="/content/list/${cat.uuid}/">${cat.title}</a>
             <div class="clear"></div>
         </div>
         <div class="items" tal:condition="view.get_featured_category_pages(cat.uuid)">

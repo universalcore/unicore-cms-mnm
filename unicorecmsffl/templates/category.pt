@@ -2,7 +2,7 @@
     <div metal:fill-slot="content">
 
         <div class="object-category-list modelbase-category-list">
-        <div class="h1">&nbsp;${category.title}
+        <div class="h1">${category.title}
             <div class="clear"></div>
         </div>
 
