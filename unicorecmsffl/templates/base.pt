@@ -24,7 +24,7 @@
       </span>
     </div>
     <div id="header">
-        <a href="/"><img src="${request.static_url('cms:static/img/logo.png')}" border="0" /></a>
+        <a href="/"><img src="${request.static_url('cms:static/img/logo.png')}?v=20141014" border="0" /></a>
     </div>
     <div id="nav">
         <a href="/" i18n:translate="Home">Home</a> |
