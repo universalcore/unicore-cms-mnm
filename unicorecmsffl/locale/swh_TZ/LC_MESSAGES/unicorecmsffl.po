@@ -1,4 +1,4 @@
-# 
+#
 # SOME DESCRIPTIVE TITLE
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-10 08:52+0200\n"
-"PO-Revision-Date: 2014-10-14 09:06+0000\n"
+"POT-Creation-Date: 2014-10-15 17:26+0200\n"
+"PO-Revision-Date: 2014-10-15 15:24+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: swh_TZ\n"
@@ -15,34 +15,40 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1413277579.067131\n"
+"X-POOTLE-MTIME: 1413386664.811237\n"
 
 #. Default: Latest
-#: ./unicorecmsffl/templates/home.pt:11
+#: unicorecmsffl/templates/home.pt:10
 msgid "Latest"
 msgstr ""
 
 #. Default: More
-#: ./unicorecmsffl/templates/home.pt:64
+#: unicorecmsffl/templates/home.pt:63
 msgid "More"
 msgstr ""
 
+#. Default: Credits
+#: unicorecmsffl/templates/credits.pt:9 unicorecmsffl/templates/base.pt:51
+#: unicorecmsffl/templates/base.pt:80
+msgid "Credits"
+msgstr "Shukrani"
+
+#. Default: Thanks to our partners
+#: unicorecmsffl/templates/credits.pt:12
+msgid "Thanks to our partners"
+msgstr "Shukrani kwa washirika wetu"
+
 #. Default: Home
-#: ./unicorecmsffl/templates/base.pt:42 ./unicorecmsffl/templates/base.pt:71
+#: unicorecmsffl/templates/base.pt:45 unicorecmsffl/templates/base.pt:74
 msgid "Home"
 msgstr "Nyumbani"
 
 #. Default: About
-#: ./unicorecmsffl/templates/base.pt:45 ./unicorecmsffl/templates/base.pt:74
+#: unicorecmsffl/templates/base.pt:48 unicorecmsffl/templates/base.pt:77
 msgid "About"
 msgstr "Kuhusu"
 
-#. Default: Credits
-#: ./unicorecmsffl/templates/base.pt:48 ./unicorecmsffl/templates/base.pt:77
-msgid "Credits"
-msgstr "Shukrani"
-
 #. Default: Contact
-#: ./unicorecmsffl/templates/base.pt:51 ./unicorecmsffl/templates/base.pt:80
+#: unicorecmsffl/templates/base.pt:54 unicorecmsffl/templates/base.pt:83
 msgid "Contact"
 msgstr "Anwani"
