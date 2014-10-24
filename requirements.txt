@@ -1,2 +1,1 @@
-unicore-cms
--e .
+unicore-cms==1.0.0
