@@ -1,20 +1,18 @@
-import os
 from pyramid import testing
 
 from unicorecmsffl import main
-from cms.tests.utils import BaseTestCase, RepoHelper
+from cms.tests.base import UnicoreTestCase
 from webtest import TestApp
 
 
-class TestViews(BaseTestCase):
+class TestViews(UnicoreTestCase):
 
     def setUp(self):
-        super(TestViews, self).setUp()
-        self.repo = RepoHelper.create(
-            os.path.join(os.getcwd(), '.test_repos', self.id()))
+        self.workspace = self.mk_workspace()
         settings = {
-            'git.path': self.repo.path,
+            'git.path': self.workspace.working_dir,
             'git.content_repo_url': '',
+            'es.index_prefix': self.workspace.index_prefix,
             'cache.enabled': 'false',
             'cache.regions': 'long_term, default_term',
             'cache.long_term.expire': '1',
@@ -23,10 +21,6 @@ class TestViews(BaseTestCase):
         }
         self.config = testing.setUp(settings=settings)
         self.app = TestApp(main({}, **settings))
-
-    def tearDown(self):
-        self.repo.destroy()
-        testing.tearDown()
 
     def test_credits_page(self):
         resp = self.app.get('/credits/', status=200)
