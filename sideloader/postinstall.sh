@@ -1,8 +1,8 @@
 pip="${VENV}/bin/pip"
 
-cd "/var/${INSTALLDIR}/${REPO}/"
+cd "${INSTALLDIR}/${REPO}/"
 
-$pip install -e .
+$pip install -e "${INSTALLDIR}/${REPO}/"
 
 ini_files="ffl.*.ini"
 
