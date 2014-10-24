@@ -1,9 +1,8 @@
 from setuptools import setup, find_packages
 
-requires = [
-    'pyramid',
-    'unicore-cms',
-]
+here = os.path.abspath(os.path.dirname(__file__))
+with open(os.path.join(here, 'requirements.txt')) as f:
+    requires = filter(None, f.readlines())
 
 setup(name='unicore-cms-ffl',
       version='0.2.0',
