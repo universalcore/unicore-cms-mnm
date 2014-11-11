@@ -13,7 +13,6 @@
       "type": "string"
     },
     "language": {
-      "index": "not_analyzed",
       "type": "string"
     },
     "uuid": {
