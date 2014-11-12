@@ -8,7 +8,7 @@
 
         <div class="items">
             <div class="box">
-                <div class="item" tal:repeat="page pages">
+                <div class="item" tal:repeat="page pages[:20]">
                     <div class="text">
                         <a href="/content/detail/${page.uuid}/">${page.description}</a>
                     </div>

@@ -20,7 +20,7 @@
                     </div>
                     <div class="clear"></div>
                     <div class="items">
-                        <div class="item" tal:repeat="linked_page linked_pages">
+                        <div class="item" tal:repeat="linked_page linked_pages[:20]">
                             <a href="/content/detail/${linked_page.uuid}/">
                                 &raquo; ${linked_page.title}
                             </a>
