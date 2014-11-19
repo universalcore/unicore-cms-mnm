@@ -5,45 +5,45 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2014-10-10 08:52+0200\n"
+"POT-Creation-Date: 2014-11-19 17:16+0200\n"
 "PO-Revision-Date: 2014-09-25 17:57+0200\n"
 "Last-Translator: TonyM <tonym@localhost>\n"
 "Language-Team: Language swh\n"
-"Language: swh_KE\n"
+"Language: swa_KE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Default: Latest
-#: unicorecmsffl/templates/home.pt:11
+#: unicorecmsffl/templates/home.pt:10
 #, fuzzy
 msgid "Latest"
 msgstr "Chihuahua"
 
 #. Default: More
-#: unicorecmsffl/templates/home.pt:64
+#: unicorecmsffl/templates/home.pt:63
 msgid "More"
 msgstr "Dane"
 
 #. Default: Home
-#: unicorecmsffl/templates/base.pt:42 unicorecmsffl/templates/base.pt:71
+#: unicorecmsffl/templates/base.pt:45 unicorecmsffl/templates/base.pt:74
 msgid "Home"
 msgstr "Poodle"
 
 #. Default: About
-#: unicorecmsffl/templates/base.pt:45 unicorecmsffl/templates/base.pt:74
+#: unicorecmsffl/templates/base.pt:48 unicorecmsffl/templates/base.pt:77
 #, fuzzy
 msgid "About"
 msgstr "Bulldog"
 
 #. Default: Credits
-#: unicorecmsffl/templates/base.pt:48 unicorecmsffl/templates/base.pt:77
+#: unicorecmsffl/templates/base.pt:51 unicorecmsffl/templates/base.pt:80
 #, fuzzy
 msgid "Credits"
 msgstr "Beagle"
 
 #. Default: Contact
-#: unicorecmsffl/templates/base.pt:51 unicorecmsffl/templates/base.pt:80
+#: unicorecmsffl/templates/base.pt:54 unicorecmsffl/templates/base.pt:83
 #, fuzzy
 msgid "Contact"
 msgstr "Spaniel"
