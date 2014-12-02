@@ -2,7 +2,17 @@
      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
      i18n:domain="unicorecmsffl">
     <div metal:fill-slot="content">
-        <div id="banner"><img src="/static/img/parents.jpg"></div>
+
+        <div tal:define="localisation view.get_localisation()" tal:omit-tag="">
+            <div id="banner">
+                <condition tal:omit-tag="" tal:condition="localisation and localisation.image_host and localisation.image">
+                    <img alt="Facts for Life" src="${view.get_image_url(localisation.image_host, localisation.image, 320)}"/>
+                </condition>
+                <condition tal:omit-tag="" tal:condition="not (localisation and localisation.image_host and localisation.image)">
+                    <img alt='Facts for Life' src="/static/img/parents.jpg" />
+                </condition>
+            </div>
+        </div>
 
         <div class="object-category-list modelbase-category-list" tal:condition="view.get_featured_pages()">
         <div class="h2"><span i18n:translate="Latest">Latest</span><div class="clear"></div></div>

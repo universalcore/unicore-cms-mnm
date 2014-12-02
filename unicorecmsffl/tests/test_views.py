@@ -3,7 +3,7 @@ from pyramid import testing
 
 from cms.tests.base import UnicoreTestCase
 from unicorecmsffl import main
-from unicore.content.models import Page
+from unicore.content.models import Page, Localisation
 from webtest import TestApp
 
 
@@ -20,6 +20,7 @@ class TestViews(UnicoreTestCase):
             'cache.long_term.expire': '1',
             'cache.default_term.expire': '1',
             'pyramid.default_locale_name': 'eng_GB',
+            'thumbor.security_key': 'sample-security-key',
         }
         self.config = testing.setUp(settings=settings)
         self.app = TestApp(main({}, **settings))
@@ -36,8 +37,20 @@ class TestViews(UnicoreTestCase):
                 }
             }
         })
+        self.workspace.setup_custom_mapping(Localisation, {
+            'properties': {
+                'locale': {
+                    'type': 'string',
+                    'index': 'not_analyzed',
+                }
+            }
+        })
 
         self.create_categories(self.workspace, count=1)
+        self.create_localisation(
+            self.workspace, 'eng_GB', image='some-uuid',
+            image_host='http://some.site.com',
+        )
 
         intro_page = Page({
             'title': 'Homepage Intro Title', 'language': 'eng_GB',
@@ -49,6 +62,11 @@ class TestViews(UnicoreTestCase):
 
         resp = self.app.get('/', status=200)
         self.assertTrue('<a href="/">Home</a>' in resp.body)
+        self.assertTrue(
+            '<img alt="Facts for Life" '
+            'src="http://some.site.com/VNlJN07VKnfaB6k1imziAts4n0o='
+            '/320x0/some-uuid"/>' in
+            resp.body)
 
         resp = self.app.get('/?_LOCALE_=eng_UK', status=200)
         self.assertTrue('<a href="/">Home</a>' in resp.body)
