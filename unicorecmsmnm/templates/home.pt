@@ -14,36 +14,23 @@
             </div>
         </div>
 
-        <div class="object-category-list modelbase-category-list" tal:condition="view.get_featured_pages()">
-        <div class="h2"><span i18n:translate="Latest">Latest</span><div class="clear"></div></div>
-        <div class="items">
-        <div class="box">
-            <div class="item" tal:repeat="page view.get_featured_pages()">
-                <div class="text">
-                    <a href="/content/detail/${page.uuid}/">${page.title}</a>
-                </div>
-            </div>
-        </div>
-        </div>
-        </div>
+        
 
-        <div class="object-category-list modelbase-category-list" tal:repeat="cat view.get_categories()[:20]">
-        <div class="h1">
-            <a href="/content/list/${cat.uuid}/">${cat.title}</a>
-            <div class="clear"></div>
-        </div>
-        <div class="items" tal:condition="view.get_featured_category_pages(cat.uuid)">
-            <div class="box">
-                <div class="item" tal:repeat="page view.get_featured_category_pages(cat.uuid)">
-                    <div class="text">
-                        <a href="/content/detail/${page.uuid}/">${page.title}</a>
+        <div class="home-content object-category-list modelbase-category-list" tal:condition="view.get_featured_pages()">
+                <div class="items">
+                    <div class="box">
+                        <div class="item" tal:repeat="page view.get_featured_pages()">
+                            
+                            <div class="text">
+                                <a class="title" href="/content/detail/${page.uuid}/">${page.title}</a>
+                                <condition tal:omit-tag="" tal:condition="page.image_host and page.image">
+                                    <img alt="${page.title}" src="${view.get_image_url(page.image_host, page.image, 45)}"/>
+                                </condition>
+                                <p> ${page.description}</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            <div class="pagi" tal:condition="view.get_featured_category_pages(cat.uuid)">
-                <a href="/content/list/${cat.uuid}/"><span i18n:translate="More">More</span> ${cat.title}</a>
             </div>
-            </div>
-        </div>
         </div>
 
     </div>

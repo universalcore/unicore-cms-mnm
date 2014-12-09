@@ -4,7 +4,7 @@
 
 /*  GLOBAL  */
 
-    html, body { margin: 0; padding: 0; color: #000; background: #fff; font-size: 1em; font-family: Arial, Helvetica, sans-serif; line-height: 1.3em; -webkit-text-size-adjust: none; }
+    html, body { margin: 0; padding: 0; color: #000; background: #fff; font-size: 1em; font-family: Arial, Helvetica, sans-serif; line-height: 1.5; -webkit-text-size-adjust: none; }
     input, select, textarea { font-size: 95%; font-family: Arial, Helvetica, sans-serif; }
     a { color: #dc5a11; text-decoration: none; }
     .clear { width: 100%; height: 0px; clear: both; display: block; }
@@ -31,26 +31,35 @@
         #content .h1 img { float: left; padding: 0 10px 0 0; }
         #content .h1 a { display: block; }
         #content .h2 { padding: 10px;  font-weight: bold; text-transform: uppercase; }
-        #content .box { padding: 10px; }
-            #content .box .item { padding: 0 0 10px 0; margin: 0 0 10px 0; border-bottom: 1px dotted #999; }
-            #content .box .item:last-child { padding: 0; margin: 0; border: 0; }
             #content .box .item a.pic { float: left; padding: 0 10px 0 0; }
             #content .box .item a.pic img { display: block; }
             #content .box .item .text { margin: 0 0 0 0; }
-        #content .intro { padding: 10px; background: #0093ef; color: #fff; }
-        #content .detail { padding: 0 10px; }
-        #content .pagination { padding: 10px 0; margin: 0 10px; border-top: 1px dotted #0093ef; }
+        #content .intro { padding: 20px; font-weight: bold; text-transform: uppercase; text-align: center;}
+        #content .detail { padding: 0 25px; }
+        .content li{margin: 15px 0 15px 0;}
+        
+        .featured{ background: #cd3209; color: #fff; text-align: center; text-transform: uppercase; margin-top: 10px;}
+        .featured a { padding: 15px; display: block; border-bottom: 5px solid #dc5a11; text-align: left; color: #fff; }
 
+        .home-content .title {text-transform: uppercase; font-weight: bold;display: block;}
+        .home-content img {float: left; margin: 5px 10px 10px 0; }
+        .home-content p {margin-top: 0;}
+        .home-content .item {border-top: solid 2px #e4e4e4; padding: 20px;}
 
 /*  MENU  */
 
     #menu { background: #cd3209; color: #fff; text-align: center; text-transform: uppercase;}
         #menu a { padding: 8px 10px; display: block; border-bottom: 5px solid #dc5a11; text-align: left; color: #fff; }
 
-
+/* BASE */
+.form-search input {border: 0;}
+.form-search #q {padding: 10px;}
+.form-search {padding:30px 15px; background-color: #dc5a11; color: #fff;}
+.form-search p{margin-top: 0; text-transform: uppercase;}
+.form-search .btn-search{background-color: #dc5a11; color: #fff;}
 /*  FOOTER  */
 
-    #footer { padding: 10px; text-align: center; color: #999; }
+    #footer { padding: 10px; text-align: center; color: #999; clear: left;}
 
 /* Mobile "preview" for large screens */
 

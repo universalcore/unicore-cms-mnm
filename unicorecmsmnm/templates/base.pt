@@ -27,21 +27,20 @@
         </div>
 
 
-        <div metal:define-slot="menu">
-          <div id="menu">
-              <a href="/" i18n:translate="Home">Home</a>
-              <a href="/about/" i18n:translate="About">About</a>
-              <a href="/credits/" i18n:translate="Credits">Credits</a>
-              <a href="/contact/" i18n:translate="Contact">Contact</a>
-          </div>
-        </div>
+        
 
     </div>
-
+   <!-- <form action='/search/' method='GET' class='form-search'>
+      <p>Search:</p>
+      <input id="q" name='q' type="text" hint='enter search here..'>
+      <input class="btn-search" type="submit" value='GO >' />
+    </form> -->
     <div id="footer">
         <span>&copy; Malaria No More 2014</span>
     </div>
 
 </div>
 </body>
+
+
 </html>

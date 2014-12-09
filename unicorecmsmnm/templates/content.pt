@@ -2,16 +2,15 @@
     <div metal:fill-slot="content">
 
         <div class="page section_news object-detail ${primary_category}-detail">
-            <div class="h1">
-                <a href="/content/list/${primary_category.uuid}/">${primary_category.title}</a>
-                <div class="clear"></div>
-            </div>
             <div class="object-header">
-                <div class="intro">${page.description}</div>
+                <div class="intro">${page.title}</div>
                 <div class="meta"></div>
             </div>
 
-
+            <condition tal:omit-tag="" tal:condition="page.image_host and page.image">
+                <img alt="${page.title}" src="${view.get_image_url(page.image_host, page.image, 320)}"/>
+            </condition>
+                    
             <div class="object-detail-inclusion diarrhoeapost-detail-inclusion">
                 <div class="detail">
                     <div class="content">
@@ -27,6 +26,18 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="featured object-category-list modelbase-category-list" tal:condition="view.get_featured_pages()">
+                <div class="items">
+                    <div class="box">
+                        <div class="item" tal:repeat="page view.get_featured_pages()">
+                            <div class="text">
+                                <a href="/content/detail/${page.uuid}/">${page.title}</a>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
 
