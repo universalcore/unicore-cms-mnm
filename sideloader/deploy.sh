@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cp -a unicore-cms-ffl ./build/
+cp -a unicore-cms-mnm ./build/

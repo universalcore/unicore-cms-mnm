@@ -5,14 +5,14 @@
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       metal:define-macro="layout"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      i18n:domain="unicorecmsffl">
+      i18n:domain="unicorecmsmnm">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="shortcut icon" type="image/x-icon" href="{{ STATIC_URL }}img/favicon.ico" />
-    <title>Unicef / Universal Core</title>
+    <title>Malaria No More / Universal Core</title>
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
     <meta name="description" content=""/>
-    <meta name="keywords" content="moms,maternal,baby,pregnancy,pregnant,expectant,mama,mother,pain,birth,help"/>
+    <meta name="keywords" content="malaria, health"/>
     <link href="${request.static_url('cms:static/css/style.css')}?v=20141014-2" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -52,7 +52,7 @@
     </div>
 
     <div id="footer">
-        <span>&copy; Unicef 2014</span>
+        <span>&copy; Malaria No More 2014</span>
     </div>
 
 </div>

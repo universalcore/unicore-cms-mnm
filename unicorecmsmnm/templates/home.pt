@@ -1,6 +1,6 @@
 <div metal:use-macro="view.global_template"
      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-     i18n:domain="unicorecmsffl">
+     i18n:domain="unicorecmsmnm">
     <div metal:fill-slot="content">
 
         <div tal:define="localisation view.get_localisation()" tal:omit-tag="">

@@ -1,2 +1,2 @@
 #! /bin/bash
-py.test --verbose --cov ./unicorecmsffl unicorecmsffl
+py.test --verbose --cov ./unicorecmsmnm unicorecmsmnm
