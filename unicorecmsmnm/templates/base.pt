@@ -17,23 +17,10 @@
 </head>
 <body>
 <div id="wrap">
-    <div id="nav">
-      <span tal:repeat="item view.get_available_languages">
-        <a href="/locale/?language=${item[0]}">${item[1]}</a>
-        <span tal:omit-tag="" tal:condition="not repeat.item.end"> |</span>
-      </span>
-    </div>
     <div id="header">
         <a href="/"><img src="${request.static_url('cms:static/img/logo.png')}?v=20141014" border="0" /></a>
     </div>
-    <div id="nav">
-        <a href="/" i18n:translate="Home">Home</a> |
-        <a href="/about/" i18n:translate="About">About</a> |
-        <a href="/credits/" i18n:translate="Credits">Credits</a> |
-        <a href="/contact/" i18n:translate="Contact">Contact</a>
-    </div>
-
-
+    
     <div id="content">
 
         <div metal:define-slot="content">

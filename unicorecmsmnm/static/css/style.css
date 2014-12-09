@@ -4,9 +4,9 @@
 
 /*  GLOBAL  */
 
-    html, body { margin: 0; padding: 0; color: #666; background: #fff; font-size: 1em; font-family: Arial, Helvetica, sans-serif; line-height: 1.3em; -webkit-text-size-adjust: none; }
+    html, body { margin: 0; padding: 0; color: #000; background: #fff; font-size: 1em; font-family: Arial, Helvetica, sans-serif; line-height: 1.3em; -webkit-text-size-adjust: none; }
     input, select, textarea { font-size: 95%; font-family: Arial, Helvetica, sans-serif; }
-    a { color: #009aef; text-decoration: none; }
+    a { color: #dc5a11; text-decoration: none; }
     .clear { width: 100%; height: 0px; clear: both; display: block; }
     .align-right { float: right; }
     .text-center { text-align: center; }
@@ -14,14 +14,8 @@
 
 /*  HEADER  */
 
-    #header { padding: 10px; background: #cce9fc; text-align: center; border-bottom: 1px dotted #0093ef; }
+    #header { padding: 10px; background: #fff; text-align: center; border-bottom: 2px solid #e9e9e9; }
         #header img { display: block; margin: 0 auto }
-
-
-/*  NAV  */
-
-    #nav { padding: 10px; background: #cce9fc; color: #fff; text-align: center; }
-        #nav a { color: #0093ef; }
 
 
 /*  BANNER  */
@@ -33,12 +27,12 @@
 /*  CONTENT  */
 
     #content {}
-        #content .h1 { padding: 10px; background: #cce9fc; font-weight: bold; color: #0093ef; border-top: 1px dotted #fff; vertical-align: middle;}
+        #content .h1 { padding: 10px;  font-weight: bold;  vertical-align: middle; text-transform: uppercase;}
         #content .h1 img { float: left; padding: 0 10px 0 0; }
         #content .h1 a { display: block; }
-        #content .h2 { padding: 10px; background: #cce9fc; font-weight: bold; color: #0093ef; border-top: 1px dotted #0093ef; }
+        #content .h2 { padding: 10px;  font-weight: bold; text-transform: uppercase; }
         #content .box { padding: 10px; }
-            #content .box .item { padding: 0 0 10px 0; margin: 0 0 10px 0; border-bottom: 1px dotted #cce9fc; }
+            #content .box .item { padding: 0 0 10px 0; margin: 0 0 10px 0; border-bottom: 1px dotted #999; }
             #content .box .item:last-child { padding: 0; margin: 0; border: 0; }
             #content .box .item a.pic { float: left; padding: 0 10px 0 0; }
             #content .box .item a.pic img { display: block; }
@@ -50,13 +44,13 @@
 
 /*  MENU  */
 
-    #menu { background: #0093ef; color: #87cae3; text-align: center; }
-        #menu a { padding: 8px 10px; display: block; border-bottom: 1px dotted #fff; text-align: left; color: #fff; }
+    #menu { background: #cd3209; color: #fff; text-align: center; text-transform: uppercase;}
+        #menu a { padding: 8px 10px; display: block; border-bottom: 5px solid #dc5a11; text-align: left; color: #fff; }
 
 
 /*  FOOTER  */
 
-    #footer { padding: 10px; background: #cce9fc; color: #666; }
+    #footer { padding: 10px; text-align: center; color: #999; }
 
 /* Mobile "preview" for large screens */
 
