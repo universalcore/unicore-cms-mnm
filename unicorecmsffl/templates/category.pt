@@ -1,0 +1,20 @@
+<div metal:use-macro="view.global_template">
+    <div metal:fill-slot="content">
+
+        <div class="object-category-list modelbase-category-list">
+        <div class="h1">${category.title}
+            <div class="clear"></div>
+        </div>
+
+        <div class="items">
+            <div class="box">
+                <div class="item" tal:repeat="page pages[:20]">
+                    <div class="text">
+                        <a href="/content/detail/${page.uuid}/">${page.description}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
