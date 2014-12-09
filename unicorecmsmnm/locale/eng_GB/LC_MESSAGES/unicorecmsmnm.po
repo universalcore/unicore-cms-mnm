@@ -1,0 +1,45 @@
+#
+# Language eng translations for PACKAGE package
+# This file is distributed under the same license as the PACKAGE package.
+# tonym <tonym@tonym-lap>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE 1.0\n"
+"POT-Creation-Date: 2014-12-09 12:32+0200\n"
+"PO-Revision-Date: 2014-12-09 12:32+0200\n"
+"Last-Translator: tonym <tonym@tonym-lap>\n"
+"Language-Team: Language eng\n"
+"Language: eng_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Default: Latest
+#: unicorecmsmnm/templates/home.pt:29
+msgid "Latest"
+msgstr ""
+
+#. Default: More
+#: unicorecmsmnm/templates/home.pt:82
+msgid "More"
+msgstr ""
+
+#. Default: Home
+#: unicorecmsmnm/templates/base.pt:45 unicorecmsmnm/templates/base.pt:74
+msgid "Home"
+msgstr ""
+
+#. Default: About
+#: unicorecmsmnm/templates/base.pt:48 unicorecmsmnm/templates/base.pt:77
+msgid "About"
+msgstr ""
+
+#. Default: Credits
+#: unicorecmsmnm/templates/base.pt:51 unicorecmsmnm/templates/base.pt:80
+msgid "Credits"
+msgstr ""
+
+#. Default: Contact
+#: unicorecmsmnm/templates/base.pt:54 unicorecmsmnm/templates/base.pt:83
+msgid "Contact"
+msgstr ""
