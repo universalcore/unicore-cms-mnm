@@ -1,4 +1,4 @@
-name: unicore-cms-ffl
+name: unicore-cms-mnm
 user: ubuntu
 buildscript: sideloader/deploy.sh
 postinstall: sideloader/postinstall.sh

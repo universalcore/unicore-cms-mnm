@@ -4,7 +4,7 @@ cd "${INSTALLDIR}/${REPO}/"
 
 $pip install -e "${INSTALLDIR}/${REPO}/"
 
-ini_files="ffl.*.ini"
+ini_files="mnm.*.ini"
 
 for ini in $ini_files
 do
