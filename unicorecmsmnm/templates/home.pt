@@ -6,10 +6,10 @@
         <div tal:define="localisation view.get_localisation()" tal:omit-tag="">
             <div id="banner">
                 <condition tal:omit-tag="" tal:condition="localisation and localisation.image_host and localisation.image">
-                    <img alt="Facts for Life" src="${view.get_image_url(localisation.image_host, localisation.image, 320)}"/>
+                    <img alt="Malaria no More" src="${view.get_image_url(localisation.image_host, localisation.image, 320)}"/>
                 </condition>
                 <condition tal:omit-tag="" tal:condition="not (localisation and localisation.image_host and localisation.image)">
-                    <img alt='Facts for Life' src="/static/img/parents.jpg" />
+                    <img alt='Malaria no More' src="/static/img/parents.jpg" />
                 </condition>
             </div>
         </div>

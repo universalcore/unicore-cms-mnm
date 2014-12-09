@@ -63,16 +63,10 @@ class TestViews(UnicoreTestCase):
         resp = self.app.get('/', status=200)
         self.assertTrue('<a href="/">Home</a>' in resp.body)
         self.assertTrue(
-            '<img alt="Facts for Life" '
+            '<img alt="Malaria no More" '
             'src="http://some.site.com/VNlJN07VKnfaB6k1imziAts4n0o='
             '/320x0/some-uuid"/>' in
             resp.body)
 
         resp = self.app.get('/?_LOCALE_=eng_UK', status=200)
         self.assertTrue('<a href="/">Home</a>' in resp.body)
-
-        resp = self.app.get('/?_LOCALE_=swa_TZ', status=200)
-        self.assertTrue('<a href="/">Nyumbani</a>' in resp.body)
-
-        resp = self.app.get('/?_LOCALE_=swh_TZ', status=200)
-        self.assertTrue('<a href="/">Nyumbani</a>' in resp.body)
