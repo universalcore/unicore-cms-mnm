@@ -34,9 +34,7 @@
         </div>
 
         <div class="home-content" tal:repeat="cat view.get_categories()[:20]">
-            <div class="h1">
-                ${cat.title}
-            </div>
+            <!-- <div class="h1">${cat.title}</div> -->
             <div class="items" tal:condition="view.get_featured_category_pages(cat.uuid)">
                 <div class="box">
                     <div class="item" tal:repeat="page view.get_featured_category_pages(cat.uuid)">
