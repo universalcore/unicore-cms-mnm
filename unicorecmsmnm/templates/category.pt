@@ -1,7 +1,7 @@
 <div metal:use-macro="view.global_template">
     <div metal:fill-slot="content">
 
-        <div class="home-content object-category-list modelbase-category-list">
+        <div class="home-content">
         <div class="h1">${category.title}</div>
 
         <div class="items">
