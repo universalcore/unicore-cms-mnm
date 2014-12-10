@@ -14,22 +14,41 @@
             </div>
         </div>
 
-        
 
-        <div class="home-content object-category-list modelbase-category-list" tal:condition="view.get_featured_pages()">
-                <div class="items">
-                    <div class="box">
-                        <div class="item" tal:repeat="page view.get_featured_pages()">
-                            
-                            <div class="text">
-                                <a class="title" href="/content/detail/${page.uuid}/">${page.title}</a>
-                                <condition tal:omit-tag="" tal:condition="page.image_host and page.image">
-                                    <img alt="${page.title}" src="${view.get_image_url(page.image_host, page.image, 45)}"/>
-                                </condition>
-                                <p> ${page.description}</p>
-                            </div>
+
+        <div class="home-content" tal:condition="view.get_featured_pages()">
+            <div class="items">
+                <div class="box">
+                    <div class="item" tal:repeat="page view.get_featured_pages()">
+
+                        <div class="text">
+                            <a class="title" href="/content/detail/${page.uuid}/">${page.title}</a>
+                            <condition tal:omit-tag="" tal:condition="page.image_host and page.image">
+                                <img alt="${page.title}" src="${view.get_image_url(page.image_host, page.image, 45)}"/>
+                            </condition>
+                            <p> ${page.description}</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-content" tal:repeat="cat view.get_categories()[:20]">
+            <div class="h1">
+                ${cat.title}
+            </div>
+            <div class="items" tal:condition="view.get_featured_category_pages(cat.uuid)">
+                <div class="box">
+                    <div class="item" tal:repeat="page view.get_featured_category_pages(cat.uuid)">
+                        <div class="text">
+                            <a class="title" href="/content/detail/${page.uuid}/">${page.title}</a>
+                            <condition tal:omit-tag="" tal:condition="page.image_host and page.image">
+                                <img alt="${page.title}" src="${view.get_image_url(page.image_host, page.image, 45)}"/>
+                            </condition>
+                            <p> ${page.description}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

@@ -1,21 +1,20 @@
 <div metal:use-macro="view.global_template">
     <div metal:fill-slot="content">
 
-        <div class="page section_news object-detail">
+        <div class="page section_news">
             <div class="h2">
                 ${page.title}
                 <div class="clear"></div>
             </div>
 
-            <div class="object-detail-inclusion diarrhoeapost-detail-inclusion">
-                <div class="detail">
-                    <div class="content">
-                        <a name="jmbo-post"></a>
-                        <div>${structure:content}</div>
-                    </div>
-                    <div class="clear"></div>
+            <div class="detail">
+                <div class="content">
+                    <a name="jmbo-post"></a>
+                    <div>${structure:content}</div>
                 </div>
+                <div class="clear"></div>
             </div>
+
         </div>
 
     </div>
