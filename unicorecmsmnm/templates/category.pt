@@ -1,17 +1,19 @@
 <div metal:use-macro="view.global_template">
     <div metal:fill-slot="content">
 
-        <div class="object-category-list modelbase-category-list">
-        <div class="h1">${category.title}
-            <div class="clear"></div>
-        </div>
+        <div class="home-content object-category-list modelbase-category-list">
+        <div class="h1">${category.title}</div>
 
         <div class="items">
             <div class="box">
                 <div class="item" tal:repeat="page pages[:20]">
                     <div class="text">
-                        <a class="title" href="/content/detail/${page.uuid}/">${page.title}</a>
-                    </div>
+                            <a class="title" href="/content/detail/${page.uuid}/">${page.title}</a>
+                            <condition tal:omit-tag="" tal:condition="page.image_host and page.image">
+                                <img alt="${page.title}" src="${view.get_image_url(page.image_host, page.image, 45)}"/>
+                            </condition>
+                            <p> ${page.description}</p>
+                        </div>
                 </div>
             </div>
         </div>

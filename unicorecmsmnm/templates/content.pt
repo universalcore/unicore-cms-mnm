@@ -10,8 +10,8 @@
             <condition tal:omit-tag="" tal:condition="page.image_host and page.image">
                 <img alt="${page.title}" src="${view.get_image_url(page.image_host, page.image, 320)}"/>
             </condition>
-                    
-            <div class="object-detail-inclusion diarrhoeapost-detail-inclusion">
+
+            <div class="object-detail-inclusion">
                 <div class="detail">
                     <div class="content">
                         <a name="jmbo-post"></a>
@@ -29,10 +29,11 @@
             </div>
         </div>
 
-        <div class="featured object-category-list modelbase-category-list" tal:condition="view.get_featured_pages()">
+        <define tal:omit-tag="" tal:define="featured_pages view.get_featured_category_pages(page.primary_category)">
+        <div class="featured object-category-list modelbase-category-list" tal:condition="featured_pages">
                 <div class="items">
                     <div class="box">
-                        <div class="item" tal:repeat="page view.get_featured_pages()">
+                        <div class="item" tal:repeat="page featured_pages">
                             <div class="text">
                                 <a href="/content/detail/${page.uuid}/">${page.title}</a>
                             </div>
@@ -40,6 +41,7 @@
                     </div>
             </div>
         </div>
+        </define>
 
     </div>
 </div>
