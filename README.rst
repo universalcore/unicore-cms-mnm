@@ -44,9 +44,7 @@ command line ``eg-tools`` utility::
     eg-tools resync -f mappings/page.mapping.json -c development.ini -m unicore.content.models.Page -p repo
     eg-tools resync -f mappings/localisation.mapping.json -c development.ini -m unicore.content.models.Localisation -p repo
 
-The output of this should be roughly something like the following:
-
-.. code-block:: bash
+The output of this should be roughly something like the following::
 
     (ve)$ eg-tools resync -f mappings/category.mapping.json -c development.ini -m unicore.content.models.Category -r True -p repo
     Destroying index for master.
