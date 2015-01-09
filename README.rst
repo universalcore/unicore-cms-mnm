@@ -38,7 +38,13 @@ Then start the server:
 And view it in your web browser on http://localhost:8000/. You'll notice
 it is empty. This is because Elasticsearch hasn't been updated yet with
 the data from the sample Git repository, this can be done using the
-command line ``eg-tools`` utility:
+command line ``eg-tools`` utility::
+
+    eg-tools resync -f mappings/category.mapping.json -c development.ini -m unicore.content.models.Category -r True -p repo
+    eg-tools resync -f mappings/page.mapping.json -c development.ini -m unicore.content.models.Page -p repo
+    eg-tools resync -f mappings/localisation.mapping.json -c development.ini -m unicore.content.models.Localisation -p repo
+
+The output of this should be roughly something like the following:
 
 .. code-block:: bash
 
@@ -46,8 +52,10 @@ command line ``eg-tools`` utility:
     Destroying index for master.
     Creating index for master.
     unicore.content.models.Category: 9 updated, 0 removed.
+
     (ve)$ eg-tools resync -f mappings/page.mapping.json -c development.ini -m unicore.content.models.Page -p repo
     unicore.content.models.Page: 6 updated, 0 removed.
+
     (ve)$ eg-tools resync -f mappings/localisation.mapping.json -c development.ini -m unicore.content.models.Localisation -p repo
     unicore.content.models.Localisation: 3 updated, 0 removed.
 
