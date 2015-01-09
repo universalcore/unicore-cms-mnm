@@ -35,13 +35,25 @@ Then start the server:
 
     (ve)$ pserve development.ini --reload
 
-It'll run happily with the stock ``development.ini`` file provided but
-it will be without any content.
+And view it in your web browser on http://localhost:8000/. You'll notice
+it is empty. This is because Elasticsearch hasn't been updated yet with
+the data from the sample Git repository, this can be done using the
+command line ``eg-tools`` utility:
 
-For a better experience add an entry to it to have it load a
-content repository::
+.. code-block:: bash
 
-    git.content_repo_url = https://github.com/your/content-repo.git
+    (ve)$ eg-tools resync -f mappings/category.mapping.json -c development.ini -m unicore.content.models.Category -r True -p repo
+    Destroying index for master.
+    Creating index for master.
+    unicore.content.models.Category: 9 updated, 0 removed.
+    (ve)$ eg-tools resync -f mappings/page.mapping.json -c development.ini -m unicore.content.models.Page -p repo
+    unicore.content.models.Page: 6 updated, 0 removed.
+    (ve)$ eg-tools resync -f mappings/localisation.mapping.json -c development.ini -m unicore.content.models.Localisation -p repo
+    unicore.content.models.Localisation: 3 updated, 0 removed.
+
+Now loading http://localhost:8000/ should show the running site with
+the default content.
+
 
 Running Unicore CMS tests
 -------------------------
