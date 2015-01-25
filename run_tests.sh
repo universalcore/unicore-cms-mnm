@@ -1,2 +1,2 @@
 #! /bin/bash
-py.test --verbose --cov ./unicorecmsmnm unicorecmsmnm
+py.test --verbose --cov ./unicorecmsmnm unicorecmsmnm "$@"

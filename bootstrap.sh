@@ -2,7 +2,7 @@
 
 set -e
 
-virtualenv ve
+#virtualenv ve
 source ve/bin/activate
 git pull
 pip install -e .

@@ -4,7 +4,6 @@ from pyramid import testing
 from cms.tests.base import UnicoreTestCase
 from unicorecmsmnm import main
 from unicore.content.models import Page, Localisation
-from webtest import TestApp
 
 
 class TestViews(UnicoreTestCase):
@@ -23,7 +22,7 @@ class TestViews(UnicoreTestCase):
             'thumbor.security_key': 'sample-security-key',
         }
         self.config = testing.setUp(settings=settings)
-        self.app = TestApp(main({}, **settings))
+        self.app = self.mk_app(self.workspace, settings=settings, main=main)
 
     def test_homepage_page(self):
         self.workspace.setup_custom_mapping(Page, {
@@ -61,12 +60,9 @@ class TestViews(UnicoreTestCase):
         self.workspace.refresh_index()
 
         resp = self.app.get('/', status=200)
-        self.assertTrue('<a href="/">Home</a>' in resp.body)
+
         self.assertTrue(
             '<img alt="Malaria no More" '
             'src="http://some.site.com/VNlJN07VKnfaB6k1imziAts4n0o='
             '/320x0/some-uuid"/>' in
             resp.body)
-
-        resp = self.app.get('/?_LOCALE_=eng_UK', status=200)
-        self.assertTrue('<a href="/">Home</a>' in resp.body)
