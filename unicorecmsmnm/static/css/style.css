@@ -11,6 +11,9 @@
     .align-right { float: right; }
     .text-center { text-align: center; }
 
+/*  LANG  */
+
+    .lang { padding: 5px 16px; text-align: right}
 
 /*  HEADER  */
 
