@@ -5,7 +5,8 @@
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       metal:define-macro="layout"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      i18n:domain="unicorecmsmnm">
+      i18n:domain="unicorecmsmnm"
+      dir="${view.get_language_direction()}">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="shortcut icon" type="image/x-icon" href="{{ STATIC_URL }}img/favicon.ico" />
