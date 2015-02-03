@@ -19,10 +19,10 @@
 <body>
 <div id="wrap">
     <div class="lang">
-      <span tal:repeat="item view.get_available_languages">
-        <a href="/locale/?language=${item[0]}">${item[1]}</a>
-        <span tal:omit-tag="" tal:condition="not repeat.item.end"> |</span>
+      <span tal:repeat="item view.get_display_languages()">
+        <a tal:attributes="{'class':'active'} if view.locale==item[0] else {}" href="/locale/${item[0]}/">${item[1]}</a> |
       </span>
+      <a href="/locale/change/">&rarr;</a>
     </div>
 
     <div id="header">
