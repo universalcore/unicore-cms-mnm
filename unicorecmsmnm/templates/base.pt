@@ -22,7 +22,7 @@
       <span tal:repeat="item view.get_display_languages()">
         <a tal:attributes="{'class':'active'} if view.locale==item[0] else {}" href="/locale/${item[0]}/">${item[1]}</a> |
       </span>
-      <a href="/locale/change/" tal:condition="len(view.get_available_languages)>2 "><span class="lang-more-lrt">&rarr;</span><span class="lang-more-rtl">&larr;</span></a>
+      <a href="/locale/change/" tal:condition="len(view.get_available_languages)>2" class="lang-change">&hellip;</a>
     </div>
 
     <div id="header">
