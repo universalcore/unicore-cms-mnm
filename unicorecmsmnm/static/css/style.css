@@ -24,24 +24,15 @@
         text-align: left;
     }
 
-    .lang-more-rtl {
-        display: none;
-    }
-
-    [dir='rtl'] .lang-more-rtl {
-        display: inline;
-    }
-
-    [dir='rtl'] .lang-more-lrt {
-        display: none;
-    }
-
     .lang .active {
         color: #999;
     }
 
-
-
+    .lang-change {
+        position: relative;
+        top: -3px;
+        font-weight: bold;
+    }
 
 /*  HEADER  */
 
