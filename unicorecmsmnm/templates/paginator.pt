@@ -1,7 +1,7 @@
 <div xmlns:metal="http://xml.zope.org/namespaces/metal"
      xmlns:tal="http://xml.zope.org/namespaces/tal"
      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-     i18n:domain="unicorecmsgem"
+     i18n:domain="unicorecmsmnm"
      metal:define-macro="paginator">
     <div tal:condition="paginator">
         <div class="pagenumbers" tal:condition="(paginator.total_pages() > 1)">
