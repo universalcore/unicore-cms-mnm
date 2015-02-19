@@ -1,0 +1,11 @@
+<div xmlns:metal="http://xml.zope.org/namespaces/metal" 
+	 metal:define-macro="search_box"
+	 xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     i18n:domain="unicorecmsgem">	
+	<div class="search-box">
+		<form action='/search/' method='GET' class='form-search'>
+		    <input id="q" name='q' type="text" hint='enter search here..' i18n:attributes="hint">
+		    <input type="submit" value='Search' i18n:attributes="value"/>
+		</form>
+	</div>
+</div>

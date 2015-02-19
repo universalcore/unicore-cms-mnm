@@ -1,0 +1,24 @@
+<div metal:use-macro="view.global_template"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="unicorecmsgem">
+    <div metal:fill-slot="content" class="articles">
+        <div class="listing">
+            <div tal:condition="paginator">
+                <p tal:condition="paginator.total_count()==1"><span tal:omit-tag="" i18n:translate='1 search result for:'>1 search result for: </span><b>${query}</b></p>
+                <p tal:condition="paginator.total_count() > 1" >${paginator.total_count()} <span tal:omit-tag="" i18n:translate='search results for:'> search results for: </span><b> ${query}</b></p>
+            </div>
+
+            <div metal:use-macro="view.paginator_template"></div>
+        </div>
+                <div tal:repeat="result paginator.get_page()" tal:condition="paginator" class="listing">
+                        <a href="/content/detail/${result.uuid}/">${result.title}</a>
+                        <text i18n:translate='in' tal:condition="result.primary_category">in</text>
+                        <a href="/content/detail/${view.get_category(result.primary_category).uuid}/" tal:condition="result.primary_category">${view.get_category(result.primary_category).title}</a>
+               </div>
+
+                <div tal:condition="not paginator" class="listing">
+                    <p tal:condition="query"><span tal:omit-tag="" i18n:translate='No results found for'>No results found for</span> <b>${query}</b></p>
+                    <p tal:condition="not query" i18n:translate="No results found!">No results found!</p>
+                </div>
+    </div>
+</div>
