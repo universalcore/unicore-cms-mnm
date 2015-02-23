@@ -4,7 +4,7 @@
      i18n:domain="unicorecmsmnm">	
 	<div class="search-box">
 		<form action='/search/' method='GET' class='form-search'>
-		    <input id="q" name='q' type="text" hint='enter search here..' i18n:attributes="hint">
+		    <input id="q" name='q' type="text">
 		    <input type="submit" value='Search' i18n:attributes="value"/>
 		</form>
 	</div>
