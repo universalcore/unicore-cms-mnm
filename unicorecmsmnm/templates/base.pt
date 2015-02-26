@@ -25,8 +25,7 @@
       <a href="/locale/change/" tal:condition="len(view.get_available_languages)>2" class="lang-change">&hellip;</a>
     </div>
 
-    <div id="header">
-        <a href="/"><img src="${request.static_url('cms:static/img/logo.png')}?v=20141014" border="0" /></a>
+    <div metal:use-macro="view.logo_template" tal:omit-tag="" tal:define="img_attrs view.get_logo_attributes(default_image_src=request.static_url('cms:static/img/logo.png'))">
     </div>
 
     <div id="content">
