@@ -37,7 +37,6 @@
 
 
     </div>
-   <div metal:define-slot="search" metal:use-macro="view.search_box_template"></div>
     <div id="footer">
         <span>&copy; Malaria No More 2014</span>
     </div>
