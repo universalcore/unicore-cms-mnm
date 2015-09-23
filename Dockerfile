@@ -1,4 +1,4 @@
-FROM pypy:2-2.6.0 
+FROM python:2.7 
 MAINTAINER Praekelt Foundation <dev@praekeltfoundation.org> 
 COPY . /var/app/ 
 COPY unicorecmsmnm/static/ /var/app/static/ 
